@@ -1,5 +1,11 @@
+import java.util.Scanner;
+
 public class guessTheNumber {
     public static void main(String[] args){
-        System.out.print("hello");
+        Scanner input = new Scanner(System.in);
+        String playAgain = "yes";
+
+
+        input.close();
     }
 }
