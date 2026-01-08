@@ -29,3 +29,8 @@ def guess_the_number():
         if playAgain != "yes":
             print("==== 🎮 Thank You Trying My Mini Game 👾 ====")
             break
+
+
+#TIMEOUT FUNCTION
+timer = threading.Timer(2, guess_the_number)
+timer.start()
