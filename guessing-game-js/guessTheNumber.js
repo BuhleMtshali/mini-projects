@@ -2,15 +2,26 @@ const prompt = require("prompt-sync")();
 
 console.log("====== 🎲 Welcome To Mini Number Guessing Game 🧩 =======");
 
-//STARTING THE LOOP FOR THE MAIN GAME
-let playAgain = "yes";
+//SETTIMEOUT FUNCTION
+setTimeout(() => {
+    guessTheNumber()
+}, 2000);
 
-while(playAgain.toLowerCase() === "yes"){
-    console.log("loop running")
+// MAIN FUNCTION
+function guessTheNumber(){
+    //STARTING THE LOOP FOR THE MAIN GAME
+    let playAgain = "yes";
+
+    while(playAgain.toLowerCase() === "yes"){
+        console.log("loop running")
 
 
-    //ASKING IF THEY WANNA PLAY AGAIN
-    playAgain = prompt("Want to Try Again 🎲?(yes/no): ");
+        //ASKING IF THEY WANNA PLAY AGAIN
+        playAgain = prompt("Want to Try Again 🎲?(yes/no): ");
+    }
+
+    console.log("===== ⛳️ Thank You Trying My Game 🎮 =====");
+
 }
 
-console.log("===== ⛳️ Thank You Trying My Game 🎮 =====");
+
