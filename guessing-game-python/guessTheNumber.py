@@ -39,7 +39,9 @@ def guess_the_number():
                 attempts -= 1
                 print(f"Ooops 🐝 Too {guess} is too Low, You have {attempts} attempts left ‼️")
             
-
+            if attempts == 0:
+                print(f"Out of Attempts ⛳️ there old friend how about we retry the Game 🎮")
+                break
 
         #CLOSING THE MAIN LOOP
         playAgain = input("🧩 Wanna give it another try?(yes/no): ").lower()
