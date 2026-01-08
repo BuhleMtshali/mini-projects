@@ -90,3 +90,10 @@ By building this game, you:
 ✅ Got your first taste of game logic & scoring
 
 ✅ Made a fun, interactive CLI project to flex your Java skills
+
+
+```
+🎯 “Code, play, repeat — that’s how we level up!”
+
+– Your friendly Java adventurer 🐝
+```
