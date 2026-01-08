@@ -1,13 +1,15 @@
 import java.util.Scanner;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class guessTheNumber {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         String playAgain = "yes";
+        int score = 0;
 
         //STARTING THE MAIN WHILE LOOP
         while (playAgain.equalsIgnoreCase("yes")) {
-            System.out.print("loop ...");
+            
 
 
            //CLOSING THE MAIN LOOP
