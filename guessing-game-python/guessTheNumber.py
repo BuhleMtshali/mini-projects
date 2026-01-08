@@ -18,10 +18,16 @@ def guess_the_number():
         attempts = 5
 
         #GET THE USER INPUT
-        user_guess = int(input("🎰 Choose a Random Number (1-20): "))
+        user_guess = input("🎰 Choose a Random Number (1-20): ")
 
         #STARTING THE INNER LOOP TO RETRY IF OUT OF TRIES
-        
+        while True:
+            #FIRST EVALUATE IF THE USER INPUTED A NUMBER
+            try:
+                guess = int(user_guess)
+            except ValueError:
+                print("🚫 Invalid Input, please ensure ypu input a number")
+
 
 
         #CLOSING THE MAIN LOOP
