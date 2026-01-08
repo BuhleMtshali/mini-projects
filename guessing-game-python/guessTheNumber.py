@@ -8,4 +8,18 @@ print("===== 🎲 Mini Number Guessing Game 🎮 ====")
 #MAIN FUNCTION
 
 def guess_the_number():
-    random_number = random.randint(1, 20)
+    score = 0
+
+    #STARTING THE MAIN WHILE LOOP
+    while True:
+
+        #CREATING THE RANDOM NUMBER
+        random_number = random.randint(1, 20)
+        attempts = 5
+
+        #GET THE USER INPUT
+        user_guess = int(input("🎰 Choose a Random Number (1-20): "))
+
+
+
+
