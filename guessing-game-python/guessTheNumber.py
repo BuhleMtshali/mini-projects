@@ -20,6 +20,12 @@ def guess_the_number():
         #GET THE USER INPUT
         user_guess = int(input("🎰 Choose a Random Number (1-20): "))
 
+        #STARTING THE INNER LOOP TO RETRY IF OUT OF TRIES
+        
 
 
-
+        #CLOSING THE MAIN LOOP
+        playAgain = input("🧩 Wanna give it another try?(yes/no): ").lower()
+        if playAgain != "yes":
+            print("==== 🎮 Thank You Trying My Mini Game 👾 ====")
+            break
