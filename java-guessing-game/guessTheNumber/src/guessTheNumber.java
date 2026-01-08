@@ -18,6 +18,17 @@ public class guessTheNumber {
                 System.out.print("🎲 Choose your Random Number(1-20): ");
                 int guess = input.nextInt();
 
+                if(guess == randomNumber){
+                    System.out.println("🧩 HAAZZZAAAH, You win!");
+                    break;
+                } else if(guess > randomNumber){
+                    attempts--;
+                    System.out.println("🙂‍↔️Oops Too High mei old chap!!! You have " + attempts + " left");
+                } else if(guess < randomNumber){
+                    attempts--;
+                    System.out.println("👾 Oops Too low mei old chap!!! You have " + attempts + " left");
+                }
+
 
                 //CLOSING THE INNER LOOP
                 if(attempts == 0){
