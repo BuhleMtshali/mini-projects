@@ -16,6 +16,7 @@ public class guessTheNumber {
             //CREATING AN INNER LOOP
             while (attempts > 0) {
                 System.out.print("🎲 Choose your Random Number(1-20): ");
+                int guess = input.nextInt();
 
 
                 //CLOSING THE INNER LOOP
