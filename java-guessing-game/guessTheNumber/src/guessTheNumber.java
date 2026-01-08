@@ -16,15 +16,24 @@ public class guessTheNumber {
             //CREATING AN INNER LOOP
             while (attempts > 0) {
                 System.out.print("🎲 Choose your Random Number(1-20): ");
-                int guess = input.nextInt();
+                String guess = input.nextLine();
+                int guessNumber = 0;
 
-                if(guess == randomNumber){
-                    System.out.println("🧩 HAAZZZAAAH, You win!");
+                //ENSURING AN INTEGER IS INPUTED
+                try{
+                    guessNumber = Integer.parseInt(guess);
+                } catch (NumberFormatException e){
+                    System.out.println("‼️ Invalid Input, Please Try Again!!");
+                }
+
+                if(guessNumber == randomNumber){
+                    score++;
+                    System.out.println("🧩 HAAZZZAAAH, You win! Current Score: " + score);
                     break;
-                } else if(guess > randomNumber){
+                } else if(guessNumber > randomNumber){
                     attempts--;
                     System.out.println("🙂‍↔️Oops Too High mei old chap!!! You have " + attempts + " left");
-                } else if(guess < randomNumber){
+                } else if(guessNumber < randomNumber){
                     attempts--;
                     System.out.println("👾 Oops Too low mei old chap!!! You have " + attempts + " left");
                 }
@@ -39,6 +48,7 @@ public class guessTheNumber {
 
            //CLOSING THE MAIN LOOP
             System.out.print("Would You like to play Another Round 🎮(yes/no): ");
+            input.nextLine();
             playAgain = input.nextLine();
         }
 
