@@ -15,7 +15,7 @@ public class guessTheNumber {
             playAgain = input.nextLine();
         }
 
-
+        System.out.println("==== 👾 Thank you for Trying My Mini Game 🎰 =====");
         input.close();
     }
 }
