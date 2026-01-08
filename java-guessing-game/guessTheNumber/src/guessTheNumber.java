@@ -11,7 +11,18 @@ public class guessTheNumber {
         while (playAgain.equalsIgnoreCase("yes")) {
             //CREATING A RANDOM NUMBER
             int randomNumber = ThreadLocalRandom.current().nextInt(1, 21);
-            System.out.println(randomNumber);
+            int attempts = 5;
+
+            //CREATING AN INNER LOOP
+            while (attempts > 0) {
+                System.out.print("🎲 Choose your Random Number(1-20): ");
+
+
+                //CLOSING THE INNER LOOP
+                if(attempts == 0){
+                    System.out.println("🎰 Oops seems like you're out of Attempts friend, Try replaying the Game 🐝!");
+                }
+            }
 
 
            //CLOSING THE MAIN LOOP
