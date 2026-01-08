@@ -9,7 +9,9 @@ public class guessTheNumber {
 
         //STARTING THE MAIN WHILE LOOP
         while (playAgain.equalsIgnoreCase("yes")) {
-            
+            //CREATING A RANDOM NUMBER
+            int randomNumber = ThreadLocalRandom.current().nextInt(1, 21);
+            System.out.println(randomNumber);
 
 
            //CLOSING THE MAIN LOOP
