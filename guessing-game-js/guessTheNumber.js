@@ -12,20 +12,23 @@ function guessTheNumber(){
 
     //STARTING THE LOOP FOR THE MAIN GAME
     let playAgain = "yes";
+    let score = 0;
 
     while(playAgain.toLowerCase() === "yes"){
         let randomNumber = Math.round(Math.random() * 20) + 1;
         let attempts = 5 //THIS COUNTS THE ATTEMPTS THE USER HAS
+        
 
         //CREATING THE INNER LOOP
         while(attempts > 0){
             let guessNumber = parseInt(prompt("🎮 Choose A random number (1-20): "))
-
+            
             //CHECKING IF NUMBER MATCHES
             if(isNaN(guessNumber)){
                 console.log("🚫 Invalid Number old Chap ‼️");
             } else if(guessNumber === randomNumber){
-                console.log(`HAZZAH!! 🐝 You guessed ${guessNumber} and the correct number was actually ${randomNumber}`);
+                score++;
+                console.log(`HAZZAH!! 🐝 You guessed ${guessNumber} and the correct number was actually ${randomNumber} your current score: ${score}`);
                 break;
             } else if(guessNumber > randomNumber){
                 attempts--;
