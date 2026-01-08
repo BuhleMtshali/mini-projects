@@ -48,7 +48,6 @@ public class guessTheNumber {
 
            //CLOSING THE MAIN LOOP
             System.out.print("Would You like to play Another Round 🎮(yes/no): ");
-            input.nextLine();
             playAgain = input.nextLine();
         }
 
