@@ -41,7 +41,7 @@ public class guessTheNumber {
 
                 //CLOSING THE INNER LOOP
                 if(attempts == 0){
-                    System.out.println("🎰 Oops seems like you're out of Attempts friend, Try replaying the Game 🐝!");
+                    System.out.println("🎰 Oops seems like you're out of Attempts friend The Correct number was: " + randomNumber + ", Try replaying the Game 🐝!");
                 }
             }
 
