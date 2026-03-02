@@ -11,7 +11,12 @@ function playTheGame(){
     //START THE WHILE LOOP
     let playAgain = "yes"
     while(playAgain.toLowerCase() === "yes"){
-        console.log("loop is rtunning")
+        //GETTING THE USER'S CHOICE
+        let playerChoice = prompt("Enter you choice (rock/paper/scissors) or 'exit' to stop the game: ").toLowerCase()
+        if (playerChoice === "exit"){
+            print("==== ‼️ THANK YOU FOR PLAYING, GOODBYE =====")
+            break
+        }
 
 
 
