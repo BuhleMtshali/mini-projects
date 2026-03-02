@@ -22,6 +22,9 @@ function playTheGame(){
             //THIS CONTINUES IF THE USER INPUTS THE RIGHT THING\
             //1. GETTING THR COMPUTER'S CHOICE
             let computerChoice = Math.random() * choices
+            console.log(`\nYou chose ${playerChoice}, computer chose ${computerChoice}.`)
+
+            
         }
 
 
