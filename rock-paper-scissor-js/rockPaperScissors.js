@@ -14,7 +14,6 @@ function playTheGame(){
         //GETTING THE USER'S CHOICE
         let playerChoice = prompt("Enter you choice (rock/paper/scissors) or 'exit' to stop the game: ").toLowerCase()
         if (playerChoice === "exit"){
-            print("==== ‼️ THANK YOU FOR PLAYING, GOODBYE =====")
             break
         }
 
@@ -43,6 +42,8 @@ function playTheGame(){
 
             //PRINTING THE SCORE
             console.log(`Score: Player ${playerWins} - Computer ${computerWins}`)
+        } else{
+            console.log("==== 🚫 Invalid input, please try again ====")
         }
 
 
