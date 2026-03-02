@@ -30,7 +30,19 @@ function playTheGame(){
             } else if(playerChoice === "rock" && computerChoice === "scissors"){
                 playerWins += 1
                 console.log(`You win! Your Score is ${playerWins}`)
+            } else if(playerChoice === "paper" && computerChoice === "rock"){
+                playerWins += 1
+                console.log(`You win! Your Score is ${playerWins}`)
+            } else if(playerChoice === "scissors" && computerChoice === "paper"){
+                playerWins += 1
+                console.log(`You win! Your Score is ${playerWins}`)
+            } else{
+                computerWins += 1
+                console.log(`Computer wins! Computer score is: ${computerWins}`)
             }
+
+            //PRINTING THE SCORE
+            console.log(`Score: Player ${playerWins} - Computer ${computerWins}`)
         }
 
 
