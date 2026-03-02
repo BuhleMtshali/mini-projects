@@ -24,7 +24,13 @@ function playTheGame(){
             let computerChoice = Math.random() * choices
             console.log(`\nYou chose ${playerChoice}, computer chose ${computerChoice}.`)
 
-            
+            //DETERMINING THE WINNER
+            if(playerChoice === computerChoice){
+                console.log("Its a tie‼️")
+            } else if(playerChoice === "rock" && computerChoice === "scissors"){
+                playerWins += 1
+                console.log(`You win! Your Score is ${playerWins}`)
+            }
         }
 
 
