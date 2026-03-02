@@ -18,6 +18,12 @@ function playTheGame(){
             break
         }
 
+        if(playerChoice === "rock" || playerChoice === "paper" || playTheGame === "scissors"){
+            //THIS CONTINUES IF THE USER INPUTS THE RIGHT THING\
+            //1. GETTING THR COMPUTER'S CHOICE
+            let computerChoice = Math.random(choices)
+        }
+
 
 
         //CLOSING THE WHILE LOOP
