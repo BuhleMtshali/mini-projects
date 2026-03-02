@@ -20,7 +20,7 @@ function playTheGame(){
         if(playerChoice === "rock" || playerChoice === "paper" || playTheGame === "scissors"){
             //THIS CONTINUES IF THE USER INPUTS THE RIGHT THING\
             //1. GETTING THR COMPUTER'S CHOICE
-            let computerChoice = Math.random() * choices
+            let computerChoice = choices[Math.floor(Math.random() * choices.length)]
             console.log(`\nYou chose ${playerChoice}, computer chose ${computerChoice}.`)
 
             //DETERMINING THE WINNER
