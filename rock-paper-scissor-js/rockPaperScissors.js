@@ -43,7 +43,7 @@ function playTheGame(){
             //PRINTING THE SCORE
             console.log(`Score: Player ${playerWins} - Computer ${computerWins}`)
         } else{
-            console.log("==== 🚫 Invalid input, please try again ====")
+            console.log("==== 🚫 Invalid input, please try again😎 ====")
         }
 
 
