@@ -30,7 +30,7 @@
     object-position: center;
 }
 
-header{
+header, .counter-container .top{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -60,9 +60,25 @@ header small{
     flex-direction: column;
     align-items: center;
     background: rgb(255, 255, 255);
+    padding: 20px 0;
 }
 
 .counter-container p{
     color: rgb(34, 38, 42);
     text-shadow: rgba(0, 0, 0, 1);
+}
+
+.counter-container .top p{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.counter-container .top h1{
+    font-size: 3.2rem;
+}
+
+.counter-container .top small{
+    font-style: italic;
+    font-size: 1.1rem;
+    
 }
