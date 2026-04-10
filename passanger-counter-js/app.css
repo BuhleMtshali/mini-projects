@@ -131,6 +131,11 @@ header small{
     color: rgb(255, 255, 255);
 }
 
+.active{
+    background:rgb(34, 38, 42);
+     color: rgb(229, 232, 235);
+}
+
 #reset-btn{
     color: rgb(55, 65, 81);
     background-color: rgb(229, 231, 235);
