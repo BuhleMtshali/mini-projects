@@ -3,7 +3,7 @@ let passengerCount = document.querySelector("#count");
 let percentageCount = document.querySelector(".percentage");
 let progressBar = document.querySelector("#progress-bar");
 let offBoardingBtn = document.querySelector(".offboard");
-let onBoardBtn = document.querySelector(".board");
+let onBoardBtn = document.querySelector("#board");
 let resetBtn = document.querySelector("#reset-btn");
 let availableSeats = document.querySelector("#available");
 let occupiedSeats = document.querySelector("#occupancy")
@@ -13,7 +13,8 @@ let progress = 0;
 onBoardBtn.addEventListener("click", () => {
     if(progress < 100){
         progress += 1;
+        percentageCount.textContent = progress;
         if(progress > 100) progress = 100
-        print.style.width = progress
+        progressBar.style.width = progress + "%"
     }
 })
