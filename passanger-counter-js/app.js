@@ -14,6 +14,7 @@ onBoardBtn.addEventListener("click", () => {
     if(progress < 100){
         progress += 1;
         percentageCount.textContent = progress;
+        occupiedSeats.textContent = progress
         if(progress > 100) progress = 100
         progressBar.style.width = progress + "%"
     }

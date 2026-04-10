@@ -90,6 +90,10 @@ header small{
     justify-content: space-between;
 }
 
+#progress-bar{
+    transition: width 0.3s ease;
+}
+
 .text-wrapper p{
     font-weight: bold;
     font-size: 1.2rem;
