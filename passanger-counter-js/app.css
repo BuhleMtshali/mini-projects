@@ -117,4 +117,23 @@ header small{
     border-radius: 22px;
     border: none;
     cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.board{
+    background:rgb(34, 38, 42);
+     color: rgb(229, 232, 235);
+}
+
+.offboard{
+    background-color: rgb(229, 232, 235);
+    color: rgb(255, 255, 255);
+}
+
+#reset-btn{
+    color: rgb(55, 65, 81);
+    background-color: rgb(229, 231, 235);
+    font-size: 1.2rem;
+    font-weight: bold;
 }
