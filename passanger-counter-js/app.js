@@ -34,15 +34,22 @@ onBoardBtn.addEventListener("click", () => {
 offBoardingBtn.addEventListener("click", () => {
     if(passengers > 0){
         passengers -= 1;
+
         let percentage = (passengers / capacity) * 100;
-        percentageCount.textContent = passengers;
-        if(passengers <= 0) passengers = 0
-        progressBar.style.width = passengers + "%"
-        passengerCount.textContent = passengers
-        occupiedSeats.textContent = Math.round(percentage)
-        availableSeats.textContent = capacity - passengers
+
+        progressBar.style.width = percentage + "%";
+
+        passengerCount.textContent = passengers;
+        percentageCount.textContent = Math.round(percentage);
+        occupiedSeats.textContent = Math.round(percentage);
+        availableSeats.textContent = capacity - passengers;
+
+        // 👇 THIS is where you check
+        if(passengers === 0){
+            offBoardingBtn.classList.remove("active");
+        }
     }
-})
+});
 
 //3. making the reset btn work
 resetBtn.addEventListener("click", () => {
