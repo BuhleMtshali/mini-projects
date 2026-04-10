@@ -7,30 +7,49 @@ let onBoardBtn = document.querySelector("#board");
 let resetBtn = document.querySelector("#reset-btn");
 let availableSeats = document.querySelector("#available");
 let occupiedSeats = document.querySelector("#occupancy")
-let progress = 0;
+let passengers = 0;
+let capacity = 50;
+
 
 //1. Making the progress bar work first
 onBoardBtn.addEventListener("click", () => {
-    if(progress < 100){
-        progress += 1;
-        percentageCount.textContent = progress;
-        occupiedSeats.textContent = progress
-        if(progress > 100) progress = 100
-        progressBar.style.width = progress + "%"
+    if(passengers < capacity){
+        passengers += 1;
+        let percentage = (passengers / capacity) * 100;
+        progressBar.style.width = percentage + "%"
+        percentageCount.textContent = Math.round(percentage)
+        passengerCount.textContent = passengers
+        occupiedSeats.textContent = Math.round(percentage)
+        availableSeats.textContent = capacity - passengers
     }
 
     //MAKING THE OFFBOARDING BUTTON WORK
-        if(progress > 0){
+        if(passengers > 0){
             offBoardingBtn.classList.add("active")
         }
+
 })
 
 //2. Making the offboarding button work
 offBoardingBtn.addEventListener("click", () => {
-    if(progress > 0){
-        progress -= 1;
-        percentageCount.textContent = progress;
-        if(progress <= 0) progress = 0
-        progressBar.style.width = progress + "%"
+    if(passengers > 0){
+        passengers -= 1;
+        let percentage = (passengers / capacity) * 100;
+        percentageCount.textContent = passengers;
+        if(passengers <= 0) passengers = 0
+        progressBar.style.width = passengers + "%"
+        passengerCount.textContent = passengers
+        occupiedSeats.textContent = Math.round(percentage)
+        availableSeats.textContent = capacity - passengers
     }
+})
+
+//3. making the reset btn work
+resetBtn.addEventListener("click", () => {
+    passengers = 0
+    let percentage = (passengers / capacity) * 100;
+    progressBar.style.width = passengers + "%"
+    passengerCount.textContent = passengers
+    occupiedSeats.textContent = Math.round(percentage)
+    availableSeats.textContent = capacity - passengers
 })
